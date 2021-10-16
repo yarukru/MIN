@@ -1,0 +1,33 @@
+@mixin transition ($time) {
+  transition: all $time ease-out;
+}
+
+@mixin transform ($x, $y) {
+  transform: translate($x, $y);
+}
+
+@mixin rotate ($deg) {
+  transform: rotate($deg);
+}
+
+$sizes: ("small":480px, "mobile":640px, "phone":760px, "tablet":960px, "small-laptop":1100px,  "laptop":1300px, "desktop":1500px);
+
+@mixin media($media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media screen and (max-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin mediaMin($media) {
+  @each $size, $resolution in $sizes {
+    @if $media == $size {
+      @media screen and (min-width: $resolution) {
+        @content;
+      }
+    }
+  }
+}

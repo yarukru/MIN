@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>ZOOMEX</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="body" tabindex="-1">
+
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <button type="button" class="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+            <div class="logo-block">
+                <a href="index.html" class="logo">
+                    <img src="images/zoomex.png" alt="Zoomex" width="209" height="35">
+                </a>
+            </div>
+            <div class="header-holder">
+                <div class="lang-wrap">
+                    <span class="title">Язык</span>
+                    <div class="lang-s">
+                        <a href="#" class="lang">
+                            <span>RU</span>
+                            <i class="flag rus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="user-wrap">
+                    <div class="us-block">
+                        <div class="us-avatar">
+                            <img src="images/media/ava-def.png" alt="img" width="71" height="72">
+                        </div>
+                        <div class="us-data">
+                            <span class="title">Приветствуем,</span>
+                            <span class="name">JagaJaga7</span>
+                        </div>
+                    </div>
+                    <div class="us-info">
+                        <div class="row">
+                            <span class="title">Время сервера</span>
+                            <span class="data">12:27 UTC</span>
+                        </div>
+                        <div class="row">
+                            <span class="title">Последний вход:</span>
+                            <span class="data">20.01.19 / 19:20  /  IP 192.168.0.1</span>
+                        </div>
+                    </div>
+                    <div class="us-rung">
+                        <span class="title">Ранг:</span>
+                        <span class="data">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="custom-wrap">
+                    <a href="#" class="btn-limpid">
+                        <i class="icon-settings"></i>
+                        <span>Настройки аккаунта</span>
+                    </a>
+                    <button class="log-out" type="button" aria-label="Log Out"><i class="icon-exit"></i></button>
+                </div>
+                <div class="copy-aff">
+                    <p class="title">Партнерская ссылка</p>
+                    <div class="copy-wrap">
+                        <input id="copy2" onclick="this.select();" type="text" value="https://zoomex.top/ref=2478" readonly>
+                        <label for="copy2" id="RefLinkHead" class="hide-label">https://zoomex.top/ref=2478</label>
+                        <button class="main-btn" onclick="copyToClipboard('#RefLinkHead')"><i class="icon-copy"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-sub-menu">
+                <button type="button" class="sub-menu" aria-label="Sub menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <aside class="sidebar">
+            <nav class="nav">
+                <div class="fin-info">
+                    <div class="head-row">
+                        <i class="icon-credit-card"></i>
+                        <span class="title">Доступный баланс</span>
+                    </div>
+                    <div class="fin-row">
+                        <span class="num">$ 3,595.58 <sub>*</sub></span>
+                        <a href="#" class="main-btn">
+                            <span>Вывести средства</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="list">
+                    <li class="item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="icon-dashboard"></i>
+                            <span>Панель управления</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="deposits.html" class="nav-link">
+                            <i class="icon-vault"></i>
+                            <span>Депозиты</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="finances.html" class="nav-link">
+                            <i class="icon-credit-card"></i>
+                            <span>Мои финансы</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="affiliates.html" class="nav-link">
+                            <i class="icon-customer"></i>
+                            <span>Партнерская программа</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-headphones"></i>
+                            <span>Тех. Поддержка</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">
+                            <i class="icon-horn"></i>
+                            <span>Новости Zoomex</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="widget">
+                <div class="head-widget">
+                    <h2 class="title">Последние новости</h2>
+                </div>
+                <div class="news-bar">
+                    <div class="preview-news">
+                        <div class="prev-media">
+                            <a href="#" class="news-link">
+                                <img src="images/news/min-prev.png" alt="img" width="529" height="239">
+                            </a>
+                        </div>
+                        <div class="prev-text">
+                            <span class="date">20.01.2019 в 12:00</span>
+                            <a href="#" class="title news-link">Добавлена платежная система Bitcoin</a>
+                        </div>
+                    </div>
+                    <div class="preview-news">
+                        <div class="prev-media">
+                            <a href="#" class="news-link">
+                                <img src="images/news/min-prev.png" alt="img" width="529" height="239">
+                            </a>
+                        </div>
+                        <div class="prev-text">
+                            <span class="date">20.01.2019 в 12:00</span>
+                            <a href="#" class="title news-link">Добавлена платежная система Bitcoin</a>
+                        </div>
+                    </div>
+                    <div class="preview-news">
+                        <div class="prev-media">
+                            <a href="#" class="news-link">
+                                <img src="images/news/min-prev.png" alt="img" width="529" height="239">
+                            </a>
+                        </div>
+                        <div class="prev-text">
+                            <span class="date">20.01.2019 в 12:00</span>
+                            <a href="#" class="title news-link">Добавлена платежная система Bitcoin</a>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#" class="btn-limpid">
+                            <span>Все новости платформы</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="content-page">
+
+            <div class="head-page">
+
+                <div class="block">
+                    <h1 class="title">Панель управления</h1>
+                    <ul class="way-list">
+                        <li class="item">
+                            <a href="index.html" class="link-page">Личный кабинет</a>
+                        </li>
+                        <li class="item">
+                            <span class="name">Панель управления</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="copy-aff">
+                    <p class="title">Партнерская ссылка</p>
+                    <div class="copy-wrap">
+                        <input id="copy" onclick="this.select();" type="text" value="https://zoomex.top/ref=2478" readonly>
+                        <label for="copy" id="RefLink" class="hide-label">https://zoomex.top/ref=2478</label>
+                        <button class="main-btn" onclick="copyToClipboard('#RefLink')"><span>Скопировать</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-rows">
+                <div class="ctn-row">
+                    <div class="block">
+                        <div class="ctn">
+                            <p class="title">Доход сегодня</p>
+                            <span class="num">$ 12,294.99<sub>*</sub></span>
+                            <a href="#" class="main-btn-bs"><span>Создать депозит</span></a>
+                            <div class="pulse">
+                                <div class="ring"></div><div class="ring"></div>
+                                <div class="ring"></div><div class="ring"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="ctn">
+                            <p class="title">Следующая выплата</p>
+                            <span class="num">$ 3,145.99<sub>*</sub></span>
+                            <div class="time">
+                                <span class="title">Через</span>
+                                <span class="timer">18ч : 15м : 12с</span>
+                            </div>
+                            <div class="pulse">
+                                <div class="ring"></div><div class="ring"></div>
+                                <div class="ring"></div><div class="ring"></div>
+                            </div>
+                            <div class="circle" data-value="75">
+                                <div class="circle__progress">
+                                    <div class="circle__progress-step circle__progress-step_first">
+                                        <div class="circle__progress-round circle__progress-round_right"></div>
+                                    </div>
+                                    <div class="circle__progress-step circle__progress-step_last">
+                                        <div class="circle__progress-round circle__progress-round_left"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-decor">
+                    <img src="images/media/infinity.png" alt="img" width="1739" height="823">
+                </div>
+            </div>
+
+            <div class="decor fin-rows">
+                <div class="content-rows">
+                    <div class="block">
+                        <div class="wrap">
+                            <div class="head-row">
+                                <i class="icon-vault"></i>
+                                <span class="title">Всего инвестировано</span>
+                            </div>
+                            <div class="ctn-row">
+                                <span class="num">$ 291.00<sub>*</sub></span>
+                                <a href="#" class="btn-limpid">
+                                    <span>Мои депозиты</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="wrap">
+                            <div class="head-row">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title">Получено прибыли</span>
+                            </div>
+                            <div class="ctn-row">
+                                <span class="num">$ 24.00<sub>*</sub></span>
+                                <a href="#" class="btn-limpid">
+                                    <span>Мои финансы</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="wrap">
+                            <div class="head-row">
+                                <span class="title">Последние начисления:</span>
+                            </div>
+                            <div class="ctn-row">
+                                <ul class="accruals">
+                                    <li class="item">
+                                        <i class="icon ic-btc"></i>
+                                        <span class="title">20.01.21 / 12:00</span>
+                                        <span class="data">+ 1.952 BTC</span>
+                                    </li>
+                                    <li class="item">
+                                        <i class="icon ic-eth"></i>
+                                        <span class="title">20.01.21 / 12:00</span>
+                                        <span class="data">+ 1.952 ETH</span>
+                                    </li>
+                                    <li class="item">
+                                        <i class="icon ic-ust"></i>
+                                        <span class="title">20.01.21 / 12:00</span>
+                                        <span class="data">+ 1 952.00 USDT</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decor-dark dep-rows">
+                <div class="content-rows">
+                    <div class="head-wraps">
+                        <h2 class="title">Активные депозиты</h2>
+                    </div>
+                    <div class="ctn-row">
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-btc"></div>
+                                    <div class="ctn">
+                                        <span class="name">Bitcoin</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">BTC 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">BTC 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-eth"></div>
+                                    <div class="ctn">
+                                        <span class="name">Ethereum</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">ETH 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">ETH 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-ust"></div>
+                                    <div class="ctn">
+                                        <span class="name">USDT (TRX)</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">USDT 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">USDT 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-ust"></div>
+                                    <div class="ctn">
+                                        <span class="name">USDT (TRX)</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">USDT 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">USDT 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-trx"></div>
+                                    <div class="ctn">
+                                        <span class="name">Tron</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">TRX 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">TRX 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                        <div class="string">
+                            <div class="block">
+                                <div class="dep-wrap">
+                                    <div class="icon ic-xrp"></div>
+                                    <div class="ctn">
+                                        <span class="name">Ripple</span>
+                                        <span class="date">Создан: 01.01.2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <p class="title">Инвестировано</p>
+                                <span class="data txt_w">XRP 1,000</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Дохода получено</p>
+                                <span class="data">XRP 0.0052</span>
+                            </div>
+                            <div class="block">
+                                <p class="title">Прогресс</p>
+                                <div class="progress-ctn">
+                                    <div class="progress-head">
+                                        <span class="completed">24%</span>
+                                        <span class="total">150%</span>
+                                    </div>
+                                    <div class="progress-row">
+                                        <div class="progress" style="width: 24%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block btn-block">
+                                <a href="#" class="main-btn"><span>Перейти к депозиту</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inr-footer">
+                        <div class="block">
+                            <h2 class="title">Создайте депозит с ZOOMEX</h2>
+                            <p class="text">Получайте стабилную еждевную прибыль уже сегодня!</p>
+                        </div>
+                        <div class="block">
+                            <a href="#" class="main-btn-bs"><span>Создать депозит</span></a>
+                            <a href="#" class="btn-limpid"><span>Мои депозиты</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decor ref-rows">
+                <div class="content-rows">
+                    <div class="head-wraps">
+                        <h2 class="title">Сводная информация о рефералах</h2>
+                        <div class="filters">
+                            <ul class="list">
+                                <li class="item">
+                                    <button type="button" class="btn-filter active">Сегодня</button>
+                                </li>
+                                <li class="item">
+                                    <button type="button" class="btn-filter">За неделю</button>
+                                </li>
+                                <li class="item">
+                                    <button type="button" class="btn-filter">За месяц</button>
+                                </li>
+                                <li class="item">
+                                    <button type="button" class="btn-filter">За всё время</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ctn-row">
+                        <div class="block">
+                            <div class="icon">
+                                <i class="icon-customer"></i>
+                            </div>
+                            <div class="ctn">
+                                <p class="title">Всего партнеров</p>
+                                <span class="data txt_w">31 925</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="icon">
+                                <i class="icon-bar-chart"></i>
+                            </div>
+                            <div class="ctn">
+                                <p class="title">Ваш партнерский доход</p>
+                                <span class="data">$ 1,000.00</span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="icon">
+                                <i class="icon-military-rank"></i>
+                            </div>
+                            <div class="ctn">
+                                <p class="title">Ваш лидерский ранг</p>
+                                <span class="data">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inr-footer">
+                        <div class="block">
+                            <h2 class="title">Партнерские отношения с Zoomex</h2>
+                            <p class="text">Получайте дополнительный доход, используя Zoomex Leadership Program</p>
+                        </div>
+                        <div class="block">
+                            <a href="#" class="main-btn-bs"><span>Партнерская программа</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="decor-dark hst-rows">
+                <div class="content-rows">
+                    <div class="head-wraps">
+                        <h2 class="title">Последние транзакции</h2>
+                    </div>
+                    <div class="ctn-row">
+                        <table class="table table-resp">
+                            <thead class="head-table">
+                            <tr>
+                                <th>Дата</th>
+                                <th>Платежная система</th>
+                                <th>Тип</th>
+                                <th>Сумма</th>
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-btc"></i>
+                                        <span class="name">Bitcoin</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Депозит</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_grn">+$ 20.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-eth"></i>
+                                        <span class="name">Ethereum</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Начисление</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_bl">+$ 15.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-ust"></i>
+                                        <span class="name">Tether (ERC)</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Вывод</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_r">-$ 200.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-trx"></i>
+                                        <span class="name">Tron</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Реферальный бонус</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_grn">+$ 20.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-xrp"></i>
+                                        <span class="name">Ripple</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Депозит</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_grn">+$ 15.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-btc"></i>
+                                        <span class="name">Bitcoin</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Вывод</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_r">-$ 200.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-title="Дата">
+                                    <span class="def">04 mar / 17:15</span>
+                                </td>
+                                <td data-title="Платежная система">
+                                    <div class="payments">
+                                        <i class="icon ic-eth"></i>
+                                        <span class="name">Ethereum</span>
+                                    </div>
+                                </td>
+                                <td data-title="Тип">
+                                    <span class="def">Начисление</span>
+                                </td>
+                                <td data-title="Сумма">
+                                    <span class="def txt_r">+$ 20.00</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="inr-footer flex-end">
+                        <div class="block">
+                            <a href="#" class="btn-limpid">
+                                <span>Детализация транзакций</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="overlay"></div>
+    <div class="sub-overlay"></div>
+
+<!-- HelloPreload -->
+<div id="hellopreloader">
+    <div id="hellopreloader_preload" style="display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background-color: #140f3e;">
+        <svg width="300px" height="200px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
+            <path stroke="#33c474" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+            <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+        </svg>
+    </div>
+</div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},0);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1500);};</script>
+<!-- HelloPreload -->
+
+<!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
+    }
+</script>
+<script>
+    // Progress circle //
+    var circle = (function() {
+        var circleElem;
+        var stepFirst;
+        var stepleLast;
+        var onePercDeg;
+        var currentVal;
+        var rotateDeg;
+        var moreThanHalf;
+        var animationTime;
+        var animationCurr;
+
+        var init = function() {
+            circleElem    = document.querySelector('.circle');
+            stepFirst     = document.querySelector('.circle__progress-step_first > .circle__progress-round');
+            stepleLast    = document.querySelector('.circle__progress-step_last > .circle__progress-round');
+            onePercDeg    = 360 / 100;
+            currentVal    = parseInt(circleElem.dataset.value);
+            rotateDeg     = 0;
+            moreThanHalf  = false;
+            animationTime = 800;
+            animationCurr = 0;
+
+            if (currentVal) {
+                _events();
+            }
+        };
+
+        var _events = function() {
+            setTimeout(function() {
+                circleElem.classList.add('circle_ready');
+
+                _calculateDeg();
+            }, 200);
+        };
+
+        var _calculateDeg = function() {
+            moreThanHalf = currentVal > 50;
+
+            rotateDeg     = moreThanHalf ? currentVal - 50 : currentVal;
+            rotateDeg     = 180 - (onePercDeg * rotateDeg);
+            animationCurr = moreThanHalf ? (360 / animationTime) * (onePercDeg * rotateDeg) : animationTime;
+
+            if (moreThanHalf) {
+                stepFirst.style.transition = 'transform ' + (animationTime - animationCurr) + 'ms linear';
+                stepFirst.style.transform = 'rotate(0deg)';
+                stepleLast.style.transition = 'transform ' + animationCurr + 'ms linear ' + (animationTime - animationCurr) + 'ms';
+                stepleLast.style.transform = 'rotate(-' + rotateDeg + 'deg)';
+            } else {
+                stepFirst.style.transition = 'transform ' + animationTime + 'ms linear';
+                stepFirst.style.transform  = 'rotate(-' + rotateDeg + 'deg)';
+            }
+        };
+
+        return {
+            init : init,
+        }
+    })();
+    document.addEventListener("DOMContentLoaded", function() {
+        circle.init();
+    });
+    // End Progress circle //
+</script>
+<!--Scripts-->
+</body>
+</html>

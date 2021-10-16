@@ -1,0 +1,91 @@
+//Fonts Import//
+@font-face {
+  font-family: 'Rogan-Thin';
+  src: local('☺'), url('../fonts/Rogan-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rogan-Light';
+  src: local('☺'), url('../fonts/Rogan-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rogan-Regular';
+  src: local('☺'), url('../fonts/Rogan-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rogan-Medium';
+  src: local('☺'), url('../fonts/Rogan-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Rogan-Bold';
+  src: local('☺'), url('../fonts/Rogan-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'fontello';
+  src: local('☺'), url('../icons/fontello.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//End Fonts Import//
+
+//Fonts//
+$f-t: 'Rogan-Thin';
+$f-l: 'Rogan-Light';
+$f-r: 'Rogan-Regular';
+$f-m: 'Rogan-Medium';
+$f-b: 'Rogan-Bold';
+//End Fonts//
+
+//Fonts weight//
+$thin: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-bold: 900;
+//End Fonts weight//
+
+//Colors//
+$white-100: #ffffff;
+
+$black-100: #000000;
+
+$blue-100: #140f3e;
+$blue-200: #09052d;
+$blue-300: #0d0933;
+$blue-400: #1a1545;
+$blue-500: #2a2553;
+$blue-600: #28215c;
+$blue-700: #7abdff;
+$blue-800: #201c42;
+$blue-900: #362d7a;
+$blue-1000: #1d1a40;
+
+$viol-100: #514a81;
+$viol-200: #5c54a1;
+
+$green-100: #28c16d;
+$green-200: #33c474;
+$green-300: #1eb92e;
+$green-400: #1eb82a;
+$green-500: #1db724;
+$green-600: #26bf60;
+
+$gray-100: #93a5bb;
+$gray-200: #a4b3c5;
+
+$red-100: #e06565;
+$red-200: #ff6055;
+$red-300: #fc2f3e;
+//End Colors//
