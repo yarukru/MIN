@@ -357,6 +357,22 @@ $time: 1.6s;
       text-decoration: underline;
     }
   }
+
+  .textarea{
+    display: block;
+    width: 100%;
+    font: $regular 18px/1.3 $f-r;
+    color: $white-100;
+    border-radius: 10px;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    padding: 16px;
+    resize: none;
+
+    @include media(mobile){
+      font-size: 16px;
+    }
+  }
 }
 
 .select-group{
@@ -458,6 +474,10 @@ $time: 1.6s;
           background-color: #1f194d;
         }
       }
+    }
+
+    &.wrap-scroll {
+      max-height: 300px;
     }
 
     .option{
@@ -686,4 +706,63 @@ $time: 1.6s;
   display: none;
 }
 //End Body Scroll//
+
+::-webkit-input-placeholder {
+  color: $white-100;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+::-moz-placeholder {
+  color: $white-100;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+:-moz-placeholder {
+  color: $white-100;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+:-ms-input-placeholder {
+  color: $white-100;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+//Scroll//
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track,
+.os-theme-light > .os-scrollbar > .os-scrollbar-track {
+  border-radius: 5px;
+}
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background: #1f194c !important;
+}
+.os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle {
+  background: $blue-100 !important;
+}
+.os-scrollbar.active > .os-scrollbar-track > .os-scrollbar-handle {
+  background: #1f194c !important;
+}
+.os-scrollbar-vertical {
+  right: 2px !important;
+}
+//Scroll//
+
 

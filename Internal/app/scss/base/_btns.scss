@@ -122,6 +122,68 @@
   }
 }
 
+.main-btn-tr{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font: $regular 18px/1.3 $f-r;
+  color: $white-100;
+  border: 1px solid $green-200;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 13px 16px;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+  @include transition(0.3s);
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    background-color: $green-200;
+    @include transform(-50%, -50%);
+    @include transition(0.2s);
+    z-index: 0;
+  }
+
+  i{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    height: 20px;
+    font-size: 26px;
+    margin-right: 16px;
+    z-index: 1;
+  }
+
+  span{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover{
+    color: $white-100;
+    border-color: transparent;
+
+    &:before{
+      width: 110%;
+      height: 110%;
+    }
+  }
+
+  &:disabled, &.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
 .main-btn-bs{
   display: inline-flex;
   align-items: center;
