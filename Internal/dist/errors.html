@@ -124,10 +124,10 @@
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-horn"></i>
-                        <span>Новости Zoomex</span>
-                    </a>
+                    <a href="news-all.html" class="nav-link">
+     <i class="icon-horn"></i>
+     <span>Новости Zoomex</span>
+</a>
                 </li>
             </ul>
         </nav>
@@ -170,9 +170,9 @@
                     </div>
                 </div>
                 <div class="btn-row">
-                    <a href="#" class="btn-limpid">
-                        <span>Все новости платформы</span>
-                    </a>
+                    <a href="news-all.html" class="btn-limpid">
+       <span>Все новости платформы</span>
+ </a>
                 </div>
             </div>
         </div>
@@ -183,13 +183,13 @@
         <div class="head-page">
 
             <div class="block">
-                <h1 class="title">Ошибки</h1>
+                <h1 class="title">Ошибки и модалы</h1>
                 <ul class="way-list">
                     <li class="item">
                         <a href="index.html" class="link-page">Личный кабинет</a>
                     </li>
                     <li class="item">
-                        <span class="name">Ошибки</span>
+                        <span class="name">Ошибки и модалы</span>
                     </li>
                 </ul>
             </div>
@@ -204,7 +204,160 @@
             </div>
         </div>
 
+        <div class="alert success-alert">
+            <div class="meaning">
+                <span class="icon icon-check"></span>
+                <div class="title">Success message</div>
+            </div>
+            <div class="alert-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            <button type="button" class="closed-alert"></button>
+        </div>
+        <div class="alert warning-alert">
+            <div class="meaning">
+                <span class="icon icon-exclamation"></span>
+                <div class="title">Warning message</div>
+            </div>
+            <div class="alert-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            <button type="button" class="closed-alert"></button>
+        </div>
+        <div class="alert info-alert">
+            <div class="meaning">
+                <span class="icon icon-icon-info"></span>
+                <div class="title">Info message</div>
+            </div>
+            <div class="alert-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            <button type="button" class="closed-alert"></button>
+        </div>
+        <div class="alert error-alert">
+            <div class="meaning">
+                <span class="icon icon-cross"></span>
+                <div class="title">Error message</div>
+            </div>
+            <div class="alert-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            <button type="button" class="closed-alert"></button>
+        </div>
 
+        <!--Test buttons for opening modal alerts-->
+        <div class="rows" style="margin: 30px 0 0;">
+            <div class="holder">
+                <ul class="btn-test-list" style="display: flex;justify-content: space-between;">
+                    <li style="flex: 1;text-align: center;">
+                        <a href="#success-alert" class="btn-mint modal_alert_w" style="color: white; text-decoration: underline;">Modal 1</a>
+                    </li>
+                    <li style="flex: 1;text-align: center;">
+                        <a href="#warning-alert" class="btn-mint modal_alert_w" style="color: white; text-decoration: underline;">Modal 2</a>
+                    </li>
+                    <li style="flex: 1;text-align: center;">
+                        <a href="#info-alert" class="btn-mint modal_alert_w" style="color: white; text-decoration: underline;">Modal 3</a>
+                    </li>
+                    <li style="flex: 1;text-align: center;">
+                        <a href="#error-alert" class="btn-mint modal_alert_w" style="color: white; text-decoration: underline;">Modal 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--End Test buttons for opening modal alerts-->
+
+        <div id="success-alert" class="modal-alert success-modal-alert">
+            <div class="alert-body">
+                <button type="button" class="closed-alert closed-alert-modal"></button>
+                <div class="alert-head">
+                    <span class="icon icon-check"></span>
+                    <div class="title">Success message</div>
+                </div>
+                <div class="alert-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                    </p>
+                </div>
+                <div class="alert-btn-box">
+                    <a href="#" class="main-btn closed-alert-modal">
+                        <span>Закрыть</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="warning-alert" class="modal-alert warning-modal-alert">
+            <div class="alert-body">
+                <button type="button" class="closed-alert closed-alert-modal"></button>
+                <div class="alert-head">
+                    <span class="icon icon-exclamation"></span>
+                    <div class="title">Warning message</div>
+                </div>
+                <div class="alert-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                    </p>
+                </div>
+                <div class="alert-btn-box">
+                    <a href="#" class="main-btn closed-alert-modal">
+                        <span>Закрыть</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="info-alert" class="modal-alert info-modal-alert">
+            <div class="alert-body">
+                <button type="button" class="closed-alert closed-alert-modal"></button>
+                <div class="alert-head">
+                    <span class="icon icon-icon-info"></span>
+                    <div class="title">Info message</div>
+                </div>
+                <div class="alert-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                    </p>
+                </div>
+                <div class="alert-btn-box">
+                    <a href="#" class="main-btn closed-alert-modal">
+                        <span>Закрыть</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="error-alert" class="modal-alert error-modal-alert">
+            <div class="alert-body">
+                <button type="button" class="closed-alert closed-alert-modal"></button>
+                <div class="alert-head">
+                    <span class="icon icon-cross"></span>
+                    <div class="title">Error message</div>
+                </div>
+                <div class="alert-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore
+                    </p>
+                </div>
+                <div class="alert-btn-box">
+                    <a href="#" class="main-btn closed-alert-modal">
+                        <span>Закрыть</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 

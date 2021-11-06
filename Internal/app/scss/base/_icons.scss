@@ -23,6 +23,21 @@
   background-size: contain;
 }
 
+.ic-lt{
+  background: url('../icons/ic/ic-lt.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-pay{
+  background: url('../icons/ic/ic-pay.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-pm{
+  background: url('../icons/ic/ic-pm.png') center no-repeat;
+  background-size: contain;
+}
+
 i.icon {
   font-style: normal;
 }
@@ -75,5 +90,12 @@ i.icon {
 .icon-roundabout:before { content: '\e81d'; }
 .icon-chat:before { content: '\e81e'; }
 .icon-calend:before { content: '\e81f'; }
+.icon-send:before { content: '\e820'; }
 .icon-envelope-text:before { content: '\e83c'; }
+.icon-exclamation:before { content: '\e885'; }
+.icon-check:before { content: '\e886'; }
+.icon-icon-info:before { content: '\e887'; }
+.icon-cross:before { content: '\e888'; }
+.icon-tw:before { content: '\f099'; }
 .icon-mail-alt:before { content: '\f0e0'; }
+.icon-fb-rect:before { content: '\f301'; }

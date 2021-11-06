@@ -124,10 +124,10 @@
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="nav-link">
-                        <i class="icon-horn"></i>
-                        <span>Новости Zoomex</span>
-                    </a>
+                    <a href="news-all.html" class="nav-link">
+     <i class="icon-horn"></i>
+     <span>Новости Zoomex</span>
+</a>
                 </li>
             </ul>
         </nav>
@@ -170,9 +170,9 @@
                     </div>
                 </div>
                 <div class="btn-row">
-                    <a href="#" class="btn-limpid">
-                        <span>Все новости платформы</span>
-                    </a>
+                    <a href="news-all.html" class="btn-limpid">
+       <span>Все новости платформы</span>
+ </a>
                 </div>
             </div>
         </div>
@@ -183,13 +183,13 @@
         <div class="head-page">
 
             <div class="block">
-                <h1 class="title">Настройки аккаунта</h1>
+                <h1 class="title">Настройки</h1>
                 <ul class="way-list">
                     <li class="item">
                         <a href="index.html" class="link-page">Личный кабинет</a>
                     </li>
                     <li class="item">
-                        <span class="name">Настройки аккаунта</span>
+                        <span class="name">Настройки</span>
                     </li>
                 </ul>
             </div>
@@ -204,11 +204,263 @@
             </div>
         </div>
 
+        <div class="decor-dark">
+            <div class="head-wraps">
+                <h2 class="title">Настройки аккаунта</h2>
+            </div>
+            <form action="#" class="settings-form">
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="name" class="label">Имя пользователя</label>
+                        <div class="input-group">
+                            <input id="name" type="text" class="input" value="JagaJaga7">
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="mail" class="label">Электронная почта</label>
+                        <div class="input-group">
+                            <input id="mail" type="text" class="input" value="JagaJaga7@gmail.com">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="sponsor" class="label">Мой спонсор</label>
+                        <div class="input-group disabled">
+                            <input id="sponsor" type="text" class="input" value="JohnnyDoe@gmail.com" disabled>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" class="main-btn">
+                        <span>Сохранить изменения</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="decor-dark">
+             <div class="head-wraps">
+                <h2 class="title">Изменить пароль</h2>
+            </div>
+            <form action="#" class="settings-form">
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="old-pass" class="label">Старый пароль</label>
+                        <div class="input-group valid-data">
+                            <input id="old-pass" type="password" class="input" value="123456789">
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="new-pass" class="label">Введите новый пароль</label>
+                        <div class="input-group">
+                            <input id="new-pass" type="password" class="input" value="123456789">
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="rep-pass" class="label">Повторите новый пароль</label>
+                        <div class="input-group invalid-data">
+                            <input id="rep-pass" type="password" class="input" value="1234567">
+                            <p class="error-data">Пароль не совпадает!</p>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="pin-code" class="label">Код безопасности</label>
+                        <div class="input-group pin-group">
+                            <input id="pin-code" type="password" class="input pin-digit" maxlength="1" pattern="[0-9]*">
+                            <input type="password" class="input pin-digit" maxlength="1" pattern="[0-9]*">
+                            <input type="password" class="input pin-digit" maxlength="1">
+                            <input type="password" class="input pin-digit" maxlength="1" pattern="[0-9]*">
+                        </div>
+                    </fieldset>
+                    <div class="info-wrap">
+                        <p>Используется для входа в личный кабинет и вывода средств. Сохраните его в безопасное место.</p>
+                        <a href="#" class="link">Забыли код безопасности?</a>
+                    </div>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" class="main-btn">
+                        <span>Сохранить изменения</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="decor-dark">
+            <div class="head-wraps">
+                <h2 class="title">Мои кошельки</h2>
+            </div>
+            <form action="#" class="settings-form wall-form">
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="btc" class="label">Bitcoin</label>
+                        <div class="input-group">
+                            <input id="btc" type="text" class="input" value="3EgjKDut36o9bYbKJHBvLaDDmgyqkcJNC3">
+                            <i class="icon-wall ic-btc"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="eth" class="label">Ethereum</label>
+                        <div class="input-group">
+                            <input id="eth" type="text" class="input" value="3EgjKDut36o9bYbKJHBvLaDDmgyqkcJNC3">
+                            <i class="icon-wall ic-eth"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="ust" class="label">Tether</label>
+                        <div class="input-group">
+                            <input id="ust" type="text" class="input" value="">
+                            <i class="icon-wall ic-ust"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="lt" class="label">Litecoin</label>
+                        <div class="input-group">
+                            <input id="lt" type="text" class="input" value="">
+                            <i class="icon-wall ic-lt"></i>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="trx" class="label">Tron</label>
+                        <div class="input-group">
+                            <input id="trx" type="text" class="input" value="">
+                            <i class="icon-wall ic-trx"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="xrp" class="label">Ripple</label>
+                        <div class="input-group">
+                            <input id="xrp" type="text" class="input" value="">
+                            <i class="icon-wall ic-xrp"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="pay" class="label">Payeer</label>
+                        <div class="input-group">
+                            <input id="pay" type="text" class="input" value="">
+                            <i class="icon-wall ic-pay"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="pm" class="label">Perfect Money</label>
+                        <div class="input-group">
+                            <input id="pm" type="text" class="input" value="">
+                            <i class="icon-wall ic-pm"></i>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" class="main-btn">
+                        <span>Сохранить изменения</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="decor-dark">
+            <div class="head-wraps">
+                <h2 class="title">Контактная информация</h2>
+            </div>
+            <form action="#" class="settings-form contact-form">
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="email" class="label">Электронная почта</label>
+                        <div class="input-group">
+                            <input id="email" type="text" class="input" value="JagaJaga7">
+                            <i class="icon-cont icon-mail"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="telegram" class="label">Телеграм</label>
+                        <div class="input-group">
+                            <input id="telegram" type="text" class="input" value="@JagaJaga7">
+                            <i class="icon-cont icon-paper-plane"></i>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="block">
+                    <fieldset class="fieldset">
+                        <label for="vb" class="label">Вайбер</label>
+                        <div class="input-group">
+                            <input id="vb" type="text" class="input" value="+8 800 555 35 35">
+                            <i class="icon-cont icon-viber"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="vc" class="label">Воцап</label>
+                        <div class="input-group">
+                            <input id="vc" type="text" class="input" value="">
+                            <i class="icon-cont icon-whatsapp"></i>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="check-block">
+                    <input id="checkbox" type="checkbox" class="check-input">
+                    <label for="checkbox" class="check-label">Отображать мою контактную информацию для партнеров</label>
+                </div>
+                <div class="btn-block">
+                    <button type="submit" class="main-btn">
+                        <span>Сохранить изменения</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!--Кнопка для тестового показа Модального окна с Пин-Кодом-->
+        <a href="#PinCode" class="main-btn modal_w" style="margin: 50px 0;"><span>PIN Code</span></a>
+        <!--Кнопка для тестового показа Модального окна с Пин-Кодом-->
     </div>
 </main>
 
 <div class="overlay"></div>
 <div class="sub-overlay"></div>
+
+<!--Modal-->
+<div id="PinCode" class="modal">
+    <div class="scroll-wrap">
+        <div class="modal-body">
+            <button class="cross closed-modal"></button>
+            <div class="head-modal">
+                <p class="title">Введите код безопасности</p>
+            </div>
+            <div class="modal-content">
+                <div class="pin-code">
+                    <div class="pin-field">
+                        <input type="password" class="result_input" readonly>
+                        <div class="box-mask">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="keyboard">
+                        <button type="button" data-value="1" class="btn-keyboard">1</button>
+                        <button type="button" data-value="2" class="btn-keyboard">2</button>
+                        <button type="button" data-value="3" class="btn-keyboard">3</button>
+                        <button type="button" data-value="4" class="btn-keyboard">4</button>
+                        <button type="button" data-value="5" class="btn-keyboard">5</button>
+                        <button type="button" data-value="6" class="btn-keyboard">6</button>
+                        <button type="button" data-value="7" class="btn-keyboard">7</button>
+                        <button type="button" data-value="8" class="btn-keyboard">8</button>
+                        <button type="button" data-value="9" class="btn-keyboard">9</button>
+                        <button type="button" data-action="backspace" class="btn-keyboard"><i class="icon-left"></i></button>
+                        <button type="button" data-value="0" class="btn-keyboard">0</button>
+                        <button type="button" data-action="check" class="btn-keyboard btn-ok">ok</button>
+                    </div>
+                    <div class="link-row">
+                        <a href="" class="link">Я забыл код </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal-->
 
 <!--Scripts-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

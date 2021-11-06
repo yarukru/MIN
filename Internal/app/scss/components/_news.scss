@@ -7,6 +7,14 @@
     justify-content: center;
     border-radius: 10px;
     overflow: hidden;
+
+    img{
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
   }
 
   .prev-text{
@@ -26,6 +34,265 @@
 
       &:hover{
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+.news-all {
+
+}
+
+.news-rows{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -32px;
+
+  @include media(mobile){
+    margin: 0;
+  }
+
+  .block{
+    display: block;
+    width: calc(33.333% - 32px);
+    margin: 0 32px 32px 0;
+
+    @include media(tablet){
+      width: calc(50% - 32px);
+    }
+
+    @include media(mobile){
+      width: 100%;
+      margin: 0 0 32px;
+    }
+  }
+
+  .media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 155px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .description{
+    display: block;
+
+    .date{
+      display: block;
+      font: $regular 16px/1 $f-r;
+      color: $gray-100;
+      padding-bottom: 8px;
+    }
+
+    .title{
+      display: block;
+      font: $regular 16px/1.3 $f-r;
+      color: $green-200;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.article{
+
+  .head-art{
+    display: block;
+    max-width: 760px;
+    width: 100%;
+    padding-bottom: 32px;
+    margin: 0 auto;
+
+    .title{
+      display: block;
+      font: $medium 36px/1.3 $f-m;
+      color: $green-200;
+
+      @include media(tablet){
+        font-size: 24px;
+      }
+
+      @include media(small){
+        font-size: 22px;
+      }
+    }
+
+    .date{
+      display: block;
+      font: $regular 16px/1 $f-r;
+      color: $gray-100;
+      padding-top: 16px;
+
+      @include media(tablet){
+        font-size: 14px;
+      }
+    }
+  }
+
+  .ctn-art{
+    display: block;
+    max-width: 760px;
+    width: 100%;
+    font: $regular 19px/1.3 $f-r;
+    color: $white-100;
+    margin: 0 auto;
+
+    @include media(tablet){
+      font-size: 16px;
+    }
+
+    .media{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    p{
+      padding-bottom: 24px;
+    }
+
+    ul {
+      display: block;
+      padding-left: 15px;
+
+      li {
+        display: block;
+        position: relative;
+        margin-bottom: 16px;
+
+        p{
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .list-desk {
+      li {
+        padding-left: 10px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 7px;
+          left: 0;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: $green-200;
+        }
+      }
+    }
+
+    .list-num {
+      counter-reset: item;
+
+      li {
+        display: flex;
+
+        &:before {
+          content: counter(item) ".";
+          counter-increment: item;
+          position: relative;
+          left: 0;
+          color: $green-200;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-art{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 760px;
+    width: 100%;
+    border-top: 1px solid $blue-800;
+    margin: 16px auto 0 auto;
+
+    @include media(tablet){
+      margin: 8px auto 0 auto;
+    }
+
+    @include media(mobile){
+      flex-wrap: wrap;
+    }
+
+    .block{
+      display: block;
+      padding-top: 24px;
+
+      @include media(small){
+        width: 100%;
+      }
+
+      &:last-child{
+        @include media(small){
+          order: -1;
+        }
+      }
+
+      .btn-limpid{
+        min-width: 200px;
+
+        @include media(small){
+          width: 100%;
+        }
+      }
+    }
+
+    .shared{
+      display: block;
+
+      .list{
+        display: flex;
+        align-items: center;
+        margin-right: -24px;
+      }
+
+      .item{
+        display: block;
+        padding-right: 24px;
+
+        span{
+          display: inline-block;
+          font: $regular 16px/1 $f-r;
+          color: $gray-100;
+        }
+
+        a{
+          display: inline-block;
+          color: $gray-100;
+          @include transition(0.3s);
+
+          i{
+            font-size: 18px;
+          }
+
+          .icon-paper-plane, .icon-tw{
+            font-size: 22px;
+          }
+
+          &:hover{
+            color: $green-200;
+          }
+        }
       }
     }
   }

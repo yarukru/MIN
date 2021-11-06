@@ -1,0 +1,91 @@
+.settings-form{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+
+  .block{
+    display: inline-block;
+    width: calc(50% - 16px);
+    padding: 16px;
+
+    @include media(tablet){
+      width: 50%;
+    }
+
+    @include media(phone){
+      width: 100%;
+    }
+
+    &:nth-child(2){
+      @include media(phone){
+        padding-top: 0;
+        margin-top: -16px;
+      }
+    }
+  }
+
+  .btn-block{
+    display: block;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .fieldset{
+    padding-bottom: 24px;
+
+    .label{
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .input{
+
+    }
+  }
+
+  &.wall-form{
+    .fieldset{
+      .input{
+        padding-left: 64px;
+      }
+    }
+  }
+
+  &.contact-form{
+    .fieldset{
+      .input{
+        padding-left: 64px;
+      }
+    }
+
+    .check-block{
+      padding: 0 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .info-wrap{
+    display: block;
+
+    @include media(phone){
+      padding-bottom: 16px;
+    }
+
+    p{
+      display: block;
+      font: $regular 18px/1.3 $f-r;
+      color: $white-100;
+      padding-bottom: 8px;
+    }
+
+    a{
+      display: inline-block;
+      font: $regular 18px/1.3 $f-r;
+      color: $green-200;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
