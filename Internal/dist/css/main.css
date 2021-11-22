@@ -2951,6 +2951,189 @@ body {
         margin: 0;
         font-size: 16px; }
 
+.modal-lang {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px 25px;
+  z-index: 99; }
+  .modal-lang .modal-content {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 25px;
+    top: 25px;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    margin: 25px 0;
+    overflow-y: auto; }
+    .modal-lang .modal-content .close-m-lang {
+      position: fixed;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      top: 50px;
+      right: 50px;
+      width: 50px;
+      height: 50px;
+      z-index: 5; }
+      @media screen and (max-width: 800px) {
+        .modal-lang .modal-content .close-m-lang {
+          top: 0;
+          right: 0; } }
+      .modal-lang .modal-content .close-m-lang:before {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+        @media screen and (max-width: 800px) {
+          .modal-lang .modal-content .close-m-lang:before {
+            width: 24px; } }
+      .modal-lang .modal-content .close-m-lang:after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+        @media screen and (max-width: 800px) {
+          .modal-lang .modal-content .close-m-lang:after {
+            width: 24px; } }
+      .modal-lang .modal-content .close-m-lang:hover:before {
+        background-color: #33c474; }
+      .modal-lang .modal-content .close-m-lang:hover:after {
+        background-color: #33c474; }
+    .modal-lang .modal-content .modal-container {
+      display: block;
+      width: 100%;
+      max-height: 100%; }
+    .modal-lang .modal-content .lang-list {
+      display: block;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto; }
+      .modal-lang .modal-content .lang-list .item {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; }
+        .modal-lang .modal-content .lang-list .item .lang-link {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          position: relative;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 100%;
+          border: 1px solid #505559;
+          border-radius: 5px;
+          padding: 8px 50px 8px 8px;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+          .modal-lang .modal-content .lang-list .item .lang-link:before {
+            content: '';
+            width: 10px;
+            height: 5px;
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            border: 2px solid #33c474;
+            border-top: none;
+            border-right: none;
+            background: transparent;
+            visibility: hidden;
+            opacity: 0;
+            margin-top: -5px;
+            z-index: 2;
+            -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            -webkit-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out; }
+          .modal-lang .modal-content .lang-list .item .lang-link:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 1;
+            -webkit-transform: translate(0, -50%);
+                -ms-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+            -webkit-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out; }
+          .modal-lang .modal-content .lang-list .item .lang-link .icon {
+            display: inline-block;
+            width: 40px;
+            min-width: 40px;
+            height: 27px;
+            border-radius: 3px;
+            line-height: 0;
+            overflow: hidden; }
+            .modal-lang .modal-content .lang-list .item .lang-link .icon .flag {
+              background-size: cover !important; }
+          .modal-lang .modal-content .lang-list .item .lang-link .name {
+            display: inline-block;
+            font: 400 18px/1 "Rogan-Regular";
+            color: #ffffff;
+            padding-left: 20px; }
+          .modal-lang .modal-content .lang-list .item .lang-link.active {
+            border-color: #33c474; }
+            .modal-lang .modal-content .lang-list .item .lang-link.active:before {
+              visibility: visible;
+              opacity: 1; }
+            .modal-lang .modal-content .lang-list .item .lang-link.active:after {
+              visibility: visible;
+              opacity: 1; }
+          .modal-lang .modal-content .lang-list .item .lang-link:hover {
+            border-color: #33c474; }
+
 .sidebar {
   min-width: 360px;
   max-width: 360px;
