@@ -1,0 +1,87 @@
+.ic-btc{
+  background: url('../icons/ic/ic-btc.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-eth{
+  background: url('../icons/ic/ic-eth.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-ust{
+  background: url('../icons/ic/ic-ust.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-trx{
+  background: url('../icons/ic/ic-trx.png') center no-repeat;
+  background-size: contain;
+}
+
+.ic-xrp{
+  background: url('../icons/ic/ic-xrp.png') center no-repeat;
+  background-size: contain;
+}
+
+i.icon {
+  font-style: normal;
+}
+.icon:before,
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'fontello';
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-horn:before { content: '\e800'; }
+.icon-vault:before { content: '\e801'; }
+.icon-credit-card:before { content: '\e802'; }
+.icon-customer:before { content: '\e803'; }
+.icon-dashboard:before { content: '\e804'; }
+.icon-headphones:before { content: '\e805'; }
+.icon-exit:before { content: '\e806'; }
+.icon-copy:before { content: '\e807'; }
+.icon-down:before { content: '\e808'; }
+.icon-left:before { content: '\e809'; }
+.icon-logout:before { content: '\e80a'; }
+.icon-military-rank:before { content: '\e80b'; }
+.icon-settings:before { content: '\e80c'; }
+.icon-bar-chart:before { content: '\e80d'; }
+.icon-right:before { content: '\e80e'; }
+.icon-up:before { content: '\e80f'; }
+.icon-line-chart:before { content: '\e810'; }
+.icon-info:before { content: '\e811'; }
+.icon-equalizer:before { content: '\e812'; }
+.icon-calendar:before { content: '\e813'; }
+.icon-cash:before { content: '\e814'; }
+.icon-return:before { content: '\e815'; }
+.icon-mail:before { content: '\e816'; }
+.icon-cog:before { content: '\e817'; }
+.icon-viber:before { content: '\e818'; }
+.icon-lock:before { content: '\e819'; }
+.icon-paper-plane:before { content: '\e81a'; }
+.icon-whatsapp:before { content: '\e81b'; }
+.icon-growth:before { content: '\e81c'; }
+.icon-roundabout:before { content: '\e81d'; }
+.icon-chat:before { content: '\e81e'; }
+.icon-calend:before { content: '\e81f'; }
+.icon-send:before { content: '\e820'; }
+.icon-login:before { content: '\e821'; }
+.icon-envelope-text:before { content: '\e83c'; }
+.icon-exclamation:before { content: '\e885'; }
+.icon-check:before { content: '\e886'; }
+.icon-icon-info:before { content: '\e887'; }
+.icon-cross:before { content: '\e888'; }
+.icon-tw:before { content: '\f099'; }
+.icon-mail-alt:before { content: '\f0e0'; }
+.icon-fb-rect:before { content: '\f301'; }
