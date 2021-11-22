@@ -90,6 +90,22 @@ $(document).ready(function(){
     });
     // END Modal//
 
+    // Modal Lang //
+    $('.lang-m_w').click(function(e){
+        e.preventDefault();
+        $( $.attr(this, 'href') ).fadeIn(200);
+    });
+    $(document).on('click', '.close-m-lang', function (e) {
+        e.preventDefault();
+        $('.modal-lang').fadeOut(200);
+    });
+    $(document).on("click", '.lang-link', function(e){
+        e.preventDefault();
+        $(".lang-link").removeClass('active');
+        $(this).addClass('active');
+    });
+    // End Modal Lang //
+
     // Pin Code //
     $('.pin-code .keyboard .btn-keyboard').click(function(e) {
         e.preventDefault();

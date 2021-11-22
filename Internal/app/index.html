@@ -10,71 +10,71 @@
 <body class="body" tabindex="-1">
 
     <header class="header">
-    <div class="container">
-        <div class="btn-menu">
-            <button type="button" class="menu" aria-label="Menu"><span></span><span></span><span></span></button>
-        </div>
-        <div class="logo-block">
-            <a href="index.html" class="logo">
-                <img src="images/zoomex.png" alt="Zoomex" width="209" height="35">
-            </a>
-        </div>
-        <div class="header-holder">
-            <div class="lang-wrap">
-                <span class="title">Язык</span>
-                <div class="lang-s">
-                    <a href="#" class="lang">
-                        <span>RU</span>
-                        <i class="flag rus"></i>
-                    </a>
-                </div>
+        <div class="container">
+            <div class="btn-menu">
+                <button type="button" class="menu" aria-label="Menu"><span></span><span></span><span></span></button>
             </div>
-            <div class="user-wrap">
-                <div class="us-block">
-                    <div class="us-avatar">
-                        <img src="images/media/ava-def.png" alt="img" width="71" height="72">
-                    </div>
-                    <div class="us-data">
-                        <span class="title">Приветствуем,</span>
-                        <span class="name">JagaJaga7</span>
-                    </div>
-                </div>
-                <div class="us-info">
-                    <div class="row">
-                        <span class="title">Время сервера</span>
-                        <span class="data">12:27 UTC</span>
-                    </div>
-                    <div class="row">
-                        <span class="title">Последний вход:</span>
-                        <span class="data">20.01.19 / 19:20  /  IP 192.168.0.1</span>
-                    </div>
-                </div>
-                <div class="us-rung">
-                    <span class="title">Ранг:</span>
-                    <span class="data">Coming Soon</span>
-                </div>
-            </div>
-            <div class="custom-wrap">
-                <a href="settings.html" class="btn-limpid">
-                    <i class="icon-settings"></i>
-                    <span>Настройки аккаунта</span>
+            <div class="logo-block">
+                <a href="index.html" class="logo">
+                    <img src="images/zoomex.png" alt="Zoomex" width="209" height="35">
                 </a>
-                <button class="log-out" type="button" aria-label="Log Out"><i class="icon-exit"></i></button>
             </div>
-            <div class="copy-aff">
-                <p class="title">Партнерская ссылка</p>
-                <div class="copy-wrap">
-                    <input id="copy2" onclick="this.select();" type="text" value="https://zoomex.top/ref=2478" readonly>
-                    <label for="copy2" id="RefLinkHead" class="hide-label">https://zoomex.top/ref=2478</label>
-                    <button class="main-btn" onclick="copyToClipboard('#RefLinkHead')"><i class="icon-copy"></i></button>
+            <div class="header-holder">
+                <div class="lang-wrap">
+                    <span class="title">Язык</span>
+                    <div class="lang-s">
+                        <a href="#ModalLang" class="lang lang-m_w">
+                            <span>RU</span>
+                            <i class="flag rus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="user-wrap">
+                    <div class="us-block">
+                        <div class="us-avatar">
+                            <img src="images/media/ava-def.png" alt="img" width="71" height="72">
+                        </div>
+                        <div class="us-data">
+                            <span class="title">Приветствуем,</span>
+                            <span class="name">JagaJaga7</span>
+                        </div>
+                    </div>
+                    <div class="us-info">
+                        <div class="row">
+                            <span class="title">Время сервера</span>
+                            <span class="data">12:27 UTC</span>
+                        </div>
+                        <div class="row">
+                            <span class="title">Последний вход:</span>
+                            <span class="data">20.01.19 / 19:20  /  IP 192.168.0.1</span>
+                        </div>
+                    </div>
+                    <div class="us-rung">
+                        <span class="title">Ранг:</span>
+                        <span class="data">Coming Soon</span>
+                    </div>
+                </div>
+                <div class="custom-wrap">
+                    <a href="settings.html" class="btn-limpid">
+                        <i class="icon-settings"></i>
+                        <span>Настройки аккаунта</span>
+                    </a>
+                    <button class="log-out" type="button" aria-label="Log Out"><i class="icon-exit"></i></button>
+                </div>
+                <div class="copy-aff">
+                    <p class="title">Партнерская ссылка</p>
+                    <div class="copy-wrap">
+                        <input id="copy2" onclick="this.select();" type="text" value="https://zoomex.top/ref=2478" readonly>
+                        <label for="copy2" id="RefLinkHead" class="hide-label">https://zoomex.top/ref=2478</label>
+                        <button class="main-btn" onclick="copyToClipboard('#RefLinkHead')"><i class="icon-copy"></i></button>
+                    </div>
                 </div>
             </div>
+            <div class="btn-sub-menu">
+                <button type="button" class="sub-menu" aria-label="Sub menu"><span></span><span></span><span></span></button>
+            </div>
         </div>
-        <div class="btn-sub-menu">
-            <button type="button" class="sub-menu" aria-label="Sub menu"><span></span><span></span><span></span></button>
-        </div>
-    </div>
-</header>
+    </header>
 
     <main class="main">
 
@@ -742,6 +742,74 @@
 
     <div class="overlay"></div>
     <div class="sub-overlay"></div>
+
+    <!--Language-->
+    <div id="ModalLang" class="modal-lang" style="display: none;">
+        <div class="modal-content">
+            <a href="#" class="close-m-lang"></a>
+            <div class="modal-container">
+                <ul class="lang-list">
+                    <li class="item">
+                        <a href="#" class="lang-link active">
+                        <span class="icon">
+                            <i class="flag rus"></i>
+                        </span>
+                            <span class="name">Русский</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag usa"></i>
+                        </span>
+                            <span class="name">Английский</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag esp"></i>
+                        </span>
+                            <span class="name">Испанский</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag ita"></i>
+                        </span>
+                            <span class="name">Итальянский</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag prt"></i>
+                        </span>
+                            <span class="name">Португальский</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag fra"></i>
+                        </span>
+                            <span class="name">Французкий</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="lang-link">
+                        <span class="icon">
+                            <i class="flag deu"></i>
+                        </span>
+                            <span class="name">Германский</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Language-->
 
 <!-- HelloPreload -->
 <div id="hellopreloader">
