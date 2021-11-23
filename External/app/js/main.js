@@ -597,4 +597,36 @@ $(document).ready(function() {
             $('.nav-right').insertBefore('.header .menu .inner-wrapper');
         }
     });
+
+    // Step script//
+    $('.prop-row .prev-btn').click(function(){
+        $('.prop-row .prop-wrapper').removeClass('active');
+        $('.prop-row .prop-list li.active').removeClass('active').prev('.prop-row .prop-list li').addClass('active');
+        if($('.prop-row .prop-list li.active').length== 0){
+            $('.prop-row .prop-list li:last').addClass('active');
+        }
+        if( $('.prop-row .prop-list li.active .prop-wrapper').attr('data-propimg')  ){
+            var imgUrl = $('.prop-row .prop-list li.active .prop-wrapper').attr('data-propimg');
+            $('<img/>').attr('src', imgUrl).on('load', function() {
+                $(this).remove();
+                $('.props-screen').css('background-image', 'url('+imgUrl+')' );
+            });
+        }
+    });
+    $('.prop-row .next-btn').click(function(){
+        $('.prop-row .prop-wrapper').removeClass('active');
+        $('.prop-row .prop-list li.active').removeClass('active').next('.prop-row .prop-list li').addClass('active');
+        if($('.prop-row .prop-list li.active').length== 0){
+            $('.prop-row .prop-list li:first').addClass('active');
+        }
+        if( $('.prop-row .prop-list li.active .prop-wrapper').attr('data-propimg')  ){
+            var imgUrl = $('.prop-row .prop-list li.active .prop-wrapper').attr('data-propimg');
+            $('<img/>').attr('src', imgUrl).on('load', function() {
+                $(this).remove();
+                $('.props-screen').css('background-image', 'url('+imgUrl+')' );
+            });
+        }
+    });
+    // End Step script//
 });
+
