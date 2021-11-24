@@ -764,8 +764,8 @@ p{
   }
 
   .row {
-    position: relative;
-    z-index: 9;
+    position: relative !important;
+    z-index: auto !important;
   }
 
   .logo {
@@ -1162,13 +1162,17 @@ p{
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 50px;
+    top: 0;
     left: 0;
     background: #000;
     opacity: 0;
     visibility: hidden;
     z-index: -1;
     @include transition(0.3s);
+
+    @media screen and (max-width: 800px){
+      top: 50px;
+    }
   }
 
   .mobile-btn{
@@ -1803,6 +1807,7 @@ body.homepage.fp-viewing-slide-1 .mobile-phone-wrapper .screen-inner-wrapper {
 .row {
   width: 83.28571em;
   max-width: 90%;
+  margin: 0 auto;
 
   @media screen and (max-width: 800px){
     width: 100%;

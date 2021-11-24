@@ -23,6 +23,11 @@
   background-size: contain;
 }
 
+.ic-message{
+  background: url('../icons/ic/ic-message.png') center no-repeat;
+  background-size: contain;
+}
+
 i.icon {
   font-style: normal;
 }
@@ -84,4 +89,5 @@ i.icon {
 .icon-cross:before { content: '\e888'; }
 .icon-tw:before { content: '\f099'; }
 .icon-mail-alt:before { content: '\f0e0'; }
+.icon-yt:before { content: '\f16a'; }
 .icon-fb-rect:before { content: '\f301'; }

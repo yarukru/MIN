@@ -5,6 +5,8 @@
 @import "_btns.scss";
 @import "_flags.scss";
 
+@import "../components/_modal.scss";
+
 html{
   overflow-x: hidden;
 }
@@ -37,5 +39,388 @@ $time: 1.6s;
   }
 }
 //Preloader//
+
+.fieldset{
+  display: block;
+  padding-bottom: 24px;
+
+  .label{
+    display: block;
+    font: $regular 18px/1.3 $f-r;
+    color: $gray-100;
+    padding-bottom: 4px;
+
+    @include media(phone){
+      font-size: 16px;
+    }
+  }
+}
+
+.fieldset-btn{
+  display: block;
+  padding-bottom: 24px;
+}
+
+.input-group{
+  display: block;
+  position: relative;
+
+  .input{
+    display: block;
+    width: 100%;
+    font: $regular 16px/1 $f-r;
+    color: $white-100;
+    border-radius: 10px;
+    border: 1px solid $viol-100;
+    background-color: #110d35;
+    padding: 15px 16px;
+
+    @include media(mobile){
+      font-size: 16px;
+    }
+
+    &:focus{
+      border-color: $green-200;
+      background-color: $blue-200;
+      box-shadow: 0 0 5px $green-200;
+    }
+
+    &:disabled{
+      opacity: 0.5;
+    }
+  }
+
+  .all-out{
+    display: inline-block;
+    font: $regular 14px/1.2 $f-r;
+    color: $green-600;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  .textarea{
+    display: block;
+    width: 100%;
+    font: $regular 18px/1.3 $f-r;
+    color: $white-100;
+    border-radius: 10px;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    padding: 16px;
+    resize: none;
+
+    @include media(mobile){
+      font-size: 16px;
+    }
+  }
+
+  .icon-wall{
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon-cont{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    width: 32px;
+    font-size: 22px;
+    color: $green-200;
+    text-align: center;
+    @include transform(0%, -50%);
+
+    &.icon-mail{
+      margin-top: -2px;
+    }
+  }
+
+  .error-data{
+    display: none;
+    justify-content: flex-end;
+    font: $regular 14px/1.3 $f-r;
+    color: $red-500;
+    padding: 4px 0 0;
+  }
+
+  &.invalid-data{
+    .input{
+      color: $red-500;
+      border-color: $red-500;
+      background-color: $blue-200;
+      box-shadow: 0 0 5px $red-500;
+    }
+
+    .error-data{
+      display: flex;
+    }
+  }
+
+  &.valid-data{
+    .input {
+      border-color: $green-200;
+      box-shadow: 0 0 5px $green-200;
+    }
+  }
+
+  &.disabled{
+    input{
+      background-color: $blue-100;
+      padding-right: 48px;
+    }
+
+    &:before{
+      content: '\E819';
+      position: absolute;
+      right: 16px;
+      top: 18px;
+      font-family: 'fontello';
+      font-size: 24px;
+      color: $white-100;
+      z-index: 2;
+    }
+  }
+}
+
+.pin-group{
+  display: flex;
+
+  .input{
+    width: 57px;
+    margin-right: 8px;
+    text-align: center;
+  }
+}
+
+.select-group{
+  display: block;
+  position: relative;
+}
+
+.select{
+  display: block;
+  position: relative;
+
+  &.open{
+    .selected{
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &:before{
+        content: '\e80f';
+      }
+    }
+
+    .select-list{
+      display: block;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: 0;
+    }
+  }
+
+  .selected{
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    padding: 16px 64px 16px 16px;
+    cursor: pointer;
+
+    &:before{
+      content: '\e808';
+      position: absolute;
+      right: 24px;
+      font-family: 'fontello';
+      font-size: 22px;
+      color: $gray-100;
+      line-height: 1;
+    }
+
+    .icon{
+      margin: -6px 16px -6px 0;
+    }
+  }
+
+  .icon{
+    display: inline-block;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+
+  .name{
+    display: block;
+    font: $regular 16px/1.3 $f-r;
+    color: $white-100;
+  }
+
+  .option{
+    display: flex;
+    align-items: center;
+    font-size: 16px !important;
+    line-height: 1.2;
+  }
+
+  .select-list{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    overflow: hidden;
+    z-index: 2;
+
+    .list{
+      display: block;
+    }
+
+    .item{
+      display: block;
+
+      .option{
+        color: $gray-100;
+      }
+
+      &.active{
+        .option{
+          background-color: #1f194d;
+        }
+      }
+    }
+
+    &.wrap-scroll {
+      max-height: 300px;
+    }
+
+    .option{
+      padding: 12px 16px;
+      cursor: pointer;
+      @include transition(0.3s);
+
+      &:hover {
+        background-color: $blue-100;
+      }
+    }
+  }
+}
+
+.radio-input{
+  display: none;
+
+  &:checked + .radio-label{
+    &:after{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.radio-label{
+  display: inline-block;
+  position: relative;
+  font: $regular 18px/1.3 $f-r;
+  color: $gray-200;
+  padding: 5px 0 5px 45px;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    cursor: pointer;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $green-200;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    @include transition(0.3s);
+  }
+}
+
+.check-input{
+  display: none;
+
+  &:checked + .check-label{
+
+    &:before{
+      border-color: $green-200;
+      background-color: $green-200;
+    }
+
+    &:after{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.check-label{
+  display: inline-block;
+  position: relative;
+  font: $regular 18px/1.3 $f-r;
+  color: $gray-200;
+  padding: 5px 0 5px 40px;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid $viol-100;
+    background-color: $blue-200;
+    cursor: pointer;
+  }
+
+  &:after{
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    width: 10px;
+    height: 4px;
+    border-left: 2px solid $white-100;
+    border-bottom: 2px solid $white-100;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    @include rotate(-45deg);
+  }
+}
+
 
 
