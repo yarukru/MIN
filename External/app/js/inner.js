@@ -2,11 +2,6 @@ $(document).ready(function() {
     $('.menu-trigger').on('click', function(){
         $(this).toggleClass('active');
         $('.menu').toggleClass('open');
-        if( $('.menu').hasClass('open') ){
-            disableScroll();
-        }else{
-            enableScroll();
-        }
     });
 
     $('.menu-overlay').on('click', function(){
