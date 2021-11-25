@@ -193,7 +193,7 @@ html, body {
     width: 50%;
     height: 100%;
     z-index: 2;
-    background: #140f3e;
+    background: $blue-1100;
     padding-left: 13.28571em;
     padding-top: 7.14286em;
     padding-bottom: 7.14286em;
@@ -1169,41 +1169,7 @@ html, body {
   }
 }
 
-.cont-list{
-  display: flex;
-  align-items: center;
-  margin: 0 -8px;
-  
-  .item{
-    display: block;
-    line-height: 0;
-    padding: 5px;
-    
-    a{
-      display: block;
-      font-size: 20px;
-      color: #52689d;
-      padding: 3px;
-      @include transition(0.3s);
 
-      .icon-yt{
-        font-size: 24px;
-      }
-
-      .icon-paper-plane{
-        font-size: 24px;
-      }
-
-      .icon-tw{
-        font-size: 24px;
-      }
-
-      &:hover{
-        color: $white-100;
-      }
-    }
-  }
-}
 
 //Body Scroll//
 ::-webkit-scrollbar {

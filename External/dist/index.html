@@ -29,7 +29,7 @@
         </div>
 
         <div class="nav-right">
-            <a href="#" class="btn login-btn">Войти</a>
+            <a href="#" class="btn login-btn auth-btn">Войти</a>
             <a href="create-account.html" class="btn main-btn"><span>Создать аккаунт</span></a>
         </div>
 
@@ -38,7 +38,7 @@
         </div>
 
         <div class="mobile-btn">
-            <a href="#" class="login-btn-m">
+            <a href="#" class="login-btn-m auth-btn">
                 <i class="icon-login"></i>
             </a>
         </div>
@@ -59,27 +59,174 @@
                 </ul>
             </div>
 
-            <div class="menu-bottom">
-                <span>Download App</span>
-                <ul>
-                    <li>
-                        <a target="_blank" href="#">
-                            <img width="125" src="images/apple-store-button.png" alt="" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">
-                            <img width="122" src="images/google-play-button.png" alt="" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
 
     </div>
 
     <div class="menu-overlay"></div>
+
+    <div class="auth-bar">
+        <div class="auth-ctn">
+            <button class="cross closed-auth"></button>
+            <div class="upper">
+                <div class="head-row">
+                    <p class="sub-title">Entering the secured area</p>
+                    <p class="title">Login or <a href="create-account.html" class="link">Register</a></p>
+                </div>
+                <div class="ctn-row">
+                    <form action="#" class="form">
+                        <fieldset class="fieldset">
+                            <label for="auth-mail" class="label">Username or e-mail</label>
+                            <div class="input-group">
+                                <input id="auth-mail" type="text" class="input" value="">
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <label for="auth-pass" class="label">Password</label>
+                            <div class="input-group">
+                                <input id="auth-pass" type="password" class="input" value="">
+                            </div>
+                            <div class="link-row">
+                                <a href="#" class="link">I do not remember the password</a>
+                            </div>
+                        </fieldset>
+                        <div class="fieldset-btn">
+                            <button type="submit" class="main-btn">
+                                <span>Login to account</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Password recovery</p>
+                    <p class="title">Enter the email address you provided during registration</p>
+                </div>
+                <div class="ctn-row">
+                    <form action="#" class="form">
+                        <fieldset class="fieldset">
+                            <label for="e-mail" class="label">Username or e-mail</label>
+                            <div class="input-group">
+                                <input id="e-mail" type="text" class="input" value="">
+                            </div>
+                        </fieldset>
+                        <div class="fieldset-btn">
+                            <button type="submit" class="main-btn">
+                                <span>Restore password</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Password recovery</p>
+                    <p class="title">Enter the email address you provided during registrationn</p>
+                </div>
+                <div class="ctn-row">
+                    <div class="info-row">
+                        <i class="icon icon-mail"></i>
+                        <p class="text">
+                            Recovery instructions sent to <span class="mail">mail@domain.com</span>
+                            If the letter from Zoomex did not reach, check the "SPAM" folder
+                        </p>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#" class="main-btn"><span>Back to login form</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Password recovery</p>
+                    <p class="title">Come up with a new password</p>
+                </div>
+                <div class="ctn-row">
+                    <form action="#" class="form">
+                        <fieldset class="fieldset">
+                            <label for="new-pass" class="label">New Password</label>
+                            <div class="input-group">
+                                <input id="new-pass" type="password" class="input" value="">
+                            </div>
+                        </fieldset>
+                        <fieldset class="fieldset">
+                            <label for="repeat-pass" class="label">Repeat password</label>
+                            <div class="input-group">
+                                <input id="repeat-pass" type="password" class="input" value="">
+                            </div>
+                        </fieldset>
+                        <div class="fieldset-btn">
+                            <button type="submit" class="main-btn">
+                                <span>Update password</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Password recovery</p>
+                    <p class="title">Your password has been<br> successfully changed!</p>
+                </div>
+                <div class="ctn-row">
+                    <div class="info-row">
+                        <div class="media media-lock">
+                            <img src="images/icons/ic-lock.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#" class="main-btn"><span>Back to login form</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Almost everything is ready!</p>
+                    <p class="title">To the email address <span>mail@domain.com</span> confirmation has been sent.</p>
+                </div>
+                <div class="ctn-row">
+                    <div class="info-row">
+                        <div class="media media-letter">
+                            <img src="images/icons/ic-letter.png" alt="img">
+                        </div>
+                        <p class="gray-text">If the letter from Zoomex did not reach, check the "SPAM" folder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upper" style="display: none;">
+                <div class="head-row">
+                    <p class="sub-title">Your account is ready!</p>
+                    <p class="title">Your account has been verified<br> and you can now start using the<br> Zoomex&nbsp;platform!</p>
+                </div>
+                <div class="ctn-row">
+                    <div class="info-row">
+                        <div class="media media-verified">
+                            <img src="images/icons/verified-letter.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <a href="#" class="main-btn"><span>Login to your account</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="block">
+                <ul class="cont-list">
+                    <li class="item"><a href="#"><i class="icon-fb-rect"></i></a></li>
+                    <li class="item"><a href="#"><i class="icon-yt"></i></a></li>
+                    <li class="item"><a href="#"><i class="icon-paper-plane"></i></a></li>
+                    <li class="item"><a href="#"><i class="icon-tw"></i></a></li>
+                </ul>
+            </div>
+            <div class="block">
+                <p class="copy">© 2022 Zoomex, Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="auth-overlay"></div>
 
 </header>
 

@@ -2,12 +2,27 @@ $(document).ready(function() {
     $('.menu-trigger').on('click', function(){
         $(this).toggleClass('active');
         $('.menu').toggleClass('open');
+        $('.auth-bar').removeClass('open');
     });
 
     $('.menu-overlay').on('click', function(){
         $('.menu-trigger').removeClass('active');
         $('.menu').removeClass('open');
         enableScroll();
+    });
+
+    $('.auth-btn').on('click', function(e){
+        e.preventDefault();
+        $('.menu-trigger').removeClass('active');
+        $('.menu').removeClass('open');
+        $('.auth-bar').toggleClass('open');
+    });
+
+    $('.closed-auth, .auth-overlay').on('click', function(e){
+        e.preventDefault();
+        $('.menu-trigger').removeClass('active');
+        $('.menu').removeClass('open');
+        $('.auth-bar').toggleClass('open');
     });
 
     // Modal Lang //

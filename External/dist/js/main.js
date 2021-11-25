@@ -572,6 +572,20 @@ function ChatListAnimationM(){
 // End Partners Chat //
 
 $(document).ready(function() {
+    $('.auth-btn').on('click', function(e){
+        e.preventDefault();
+        $('.menu-trigger').removeClass('active');
+        $('.menu').removeClass('open');
+        $('.auth-bar').toggleClass('open');
+    });
+
+    $('.closed-auth, .auth-overlay').on('click', function(e){
+        e.preventDefault();
+        $('.menu-trigger').removeClass('active');
+        $('.menu').removeClass('open');
+        $('.auth-bar').toggleClass('open');
+    });
+
     // Modal Lang //
     $('.lang-m_w').click(function(e){
         e.preventDefault();
