@@ -21,14 +21,14 @@ let adjustPagination = (item) => {
 
 let openFooter = () => {
     $('body').addClass('footer-open');
-}
+};
 
 let closeFooter = () => {
     $('body').removeClass('footer-open');
     setTimeout(function(){
         $.fn.fullpage.setAllowScrolling(true);
     }, 1000);
-}
+};
 
 let footerScroll = (item) => {
 
@@ -642,5 +642,50 @@ $(document).ready(function() {
         }
     });
     // End Step script//
+
+    // News carousel //
+    $('#news-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        dots: true,
+        nav: true,
+        items: 4,
+        autoplay: true,
+        autoHeight: true,
+        autoplayTimeout: 7000,
+        smartSpeed: 800,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            500: {
+                items: 2
+            },
+            960: {
+                items: 3
+            },
+            1700: {
+                items: 4
+            }
+        }
+    });
+    // End News carousel //
+
+    var foot = $('.homepage');
+    if(foot.length){
+        function load(){
+            let footerHeight = $('.footer').outerHeight();
+
+            if( $('body').hasClass('footer-open') ){
+                $('.container').css('transform', 'translateY(-'+footerHeight+'px)')
+            }else{
+                $('.container').css('transform', 'translateY(0px')
+            }
+        }
+        setInterval(function(){
+            load();
+        });
+    }
 });
 
