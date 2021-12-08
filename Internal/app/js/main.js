@@ -181,4 +181,22 @@ $(document).ready(function(){
         }
     });
     // End Pin Code wrap //
+
+    // Added Avatar //
+    $("#added-ava").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('.added-ava img').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+    $('.input_file input[type=file]').change(function() {
+        var t = $(this).val();
+        if (t.indexOf('C:\\fakepath\\') + 1) t = t.substr(12);
+        var e = $(this).next().find('.fake-file');
+        e.val(t);
+    });
+    // End Added Avatar //
 });

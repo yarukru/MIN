@@ -252,6 +252,9 @@ i.icon {
 .icon-cross:before {
   content: '\e888'; }
 
+.icon-download:before {
+  content: '\e90e'; }
+
 .icon-tw:before {
   content: '\f099'; }
 
@@ -6990,6 +6993,80 @@ body {
     padding-bottom: 24px; }
     .settings-form .fieldset .label {
       color: rgba(255, 255, 255, 0.65); }
+  .settings-form .ava-fieldset {
+    position: relative;
+    padding-left: 100px; }
+    @media screen and (max-width: 960px) {
+      .settings-form .ava-fieldset {
+        padding-left: 76px; } }
+    .settings-form .ava-fieldset .avatar {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      overflow: hidden;
+      -webkit-transform: translate(0%, -50%);
+          -ms-transform: translate(0%, -50%);
+              transform: translate(0%, -50%); }
+      @media screen and (max-width: 960px) {
+        .settings-form .ava-fieldset .avatar {
+          width: 60px;
+          height: 60px; } }
+    .settings-form .ava-fieldset .input-group {
+      position: relative; }
+      .settings-form .ava-fieldset .input-group .added-file {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2; }
+      .settings-form .ava-fieldset .input-group .fake-file {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        width: 100%;
+        font: 400 18px/1.3 "Rogan-Regular";
+        color: #33c474;
+        border-radius: 10px;
+        border: 1px solid rgba(81, 74, 129, 0.5);
+        background-color: rgba(20, 15, 62, 0.5);
+        padding: 16px 50px 16px 16px;
+        z-index: 1;
+        overflow: hidden;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
+        @media screen and (max-width: 640px) {
+          .settings-form .ava-fieldset .input-group .fake-file {
+            font-size: 16px; } }
+        .settings-form .ava-fieldset .input-group .fake-file span {
+          display: inline-block;
+          white-space: nowrap;
+          -o-text-overflow: ellipsis;
+             text-overflow: ellipsis;
+          overflow: hidden; }
+        .settings-form .ava-fieldset .input-group .fake-file .icon {
+          position: absolute;
+          right: 13px;
+          color: #ffffff;
+          -webkit-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+      .settings-form .ava-fieldset .input-group:hover .fake-file {
+        border-color: #5c54a1; }
+        .settings-form .ava-fieldset .input-group:hover .fake-file .icon {
+          color: #33c474; }
   .settings-form.wall-form .fieldset .input {
     padding-left: 64px; }
   .settings-form.contact-form .fieldset .input {
